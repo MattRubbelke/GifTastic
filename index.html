@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tommy's Go-To Gifs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Tommy's Go-To Gifs</h1>
+                <p class="lead">This application is for Tommy to find the gifs he most commonly uses.</p>
+                <p class="lead">Double-click to animate the gif!</p>
+            </div>
+        </div>
+    <div id="contents">
+        <div id="buttons"></div>
+        <div id="add-more">
+            <form>
+                <div class="form-group" id="gif-form">
+                    <label for="addGifs">Don't see what you're looking for? Input for more gifs!</label>
+                        <input type="text" class="form-control" id="gif-input" placeholder="Add your search term here!">
+                        <button id="add-gifs" type="submit" class="btn btn-info">Add Gif Buttons!</button>
+                    </div>
+                </form>
+        </div>
+        <div id="gifs-button"></div>
+        <div id="gifs-display"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="gif.js"></script>
+</body>
+</html>

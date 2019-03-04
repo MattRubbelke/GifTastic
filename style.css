@@ -1,0 +1,27 @@
+#contents{
+    margin: 0 auto;
+    max-width: 960px;
+    
+}
+
+.jumbotron{
+    text-align: center
+}
+
+button{
+    margin: 5px 5px;
+}
+
+#add-gifs{
+    margin: 10px 0px;
+    display: block;
+}
+
+#gifs-display{
+    margin-top: 20px;
+}
+
+#gif-image{
+    float: left;
+    margin-right: 10px;
+}
