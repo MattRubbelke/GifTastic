@@ -1,7 +1,7 @@
 $(document).ready(function (){
 
 // Variables needed
-var topics = ["WTF", "Cackling", "Giggling", "NeNe Leakes", "Real Housewives", "RPDR" ]
+var topics = ["WTF", "Cackling", "Giggling", "Hell Yeah", "Real Housewives", "RPDR" ]
 
 // Button creation
 function renderButtons(){
@@ -38,7 +38,7 @@ function giphy(){
 
     // Creates a div to hold the movie
     for (var i = 0; i < results.length; i++) {
-        var gifDiv = $("<div id='gif-image'>");
+        var gifDiv = $("<div class='gif-image'>");
 
         var rating = results[i].rating;
 
@@ -81,7 +81,6 @@ renderButtons();
 
 // Animates the gif. The gif has to be double-clicked.
 function stillAnimate(){
-    $(".giphy").on("click", function(){
         var state = $(this).attr("data-state");
         var still = $(this).attr("data-still");
         var animate = $(this).attr("data-animate");
@@ -94,7 +93,6 @@ function stillAnimate(){
             $(this).attr("data-state", "still");
             $(this).attr("src", still);
         }
-    })
     };
 
 // Runs the button clicks
